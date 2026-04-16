@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className=" bg-[#121212] ">
+      <body className="">
         <Header />
         {children}
         <Footer />
