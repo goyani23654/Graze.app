@@ -134,7 +134,6 @@ const Home = () => {
       }),
       "*",
     );
-
     setIsVideoPlaying((prev) => !prev);
   };
 
@@ -229,11 +228,10 @@ const Home = () => {
               </div>
               <div className="relative mt-1.5 flex items-center justify-center h-5 w-full">
                 <p
-                  className={`absolute text-[12px] text-red-400 text-center transition-opacity duration-300 ${
-                    showEmailError
-                      ? "opacity-100 pointer-events-auto"
-                      : "opacity-0 pointer-events-none"
-                  }`}
+                  className={`absolute text-[12px] text-red-400 text-center transition-opacity duration-300 ${showEmailError
+                    ? "opacity-100 pointer-events-auto"
+                    : "opacity-0 pointer-events-none"
+                    }`}
                 >
                   Please enter a valid email address
                 </p>
@@ -241,11 +239,10 @@ const Home = () => {
                   href={`${waitlistBaseUrl}${encodeURIComponent(email)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`absolute text-[14px] text-[#a0a0a0] hover:text-text-primary transition-all duration-300 flex items-center gap-1 whitespace-nowrap ${
-                    showEmailError
-                      ? "opacity-0 pointer-events-none"
-                      : "opacity-100 pointer-events-auto"
-                  }`}
+                  className={`absolute text-[14px] text-[#a0a0a0] hover:text-text-primary transition-all duration-300 flex items-center gap-1 whitespace-nowrap ${showEmailError
+                    ? "opacity-0 pointer-events-none"
+                    : "opacity-100 pointer-events-auto"
+                    }`}
                 >
                   <span className="whitespace-nowrap">
                     Skip ahead by answering a few questions.
@@ -544,9 +541,8 @@ const Home = () => {
                           height="20"
                           viewBox="0 0 20 20"
                           fill="none"
-                          className={`shrink-0 transition-transform duration-300 text-[#a0a0a0] ${
-                            isOpen ? "rotate-90" : ""
-                          }`}
+                          className={`shrink-0 transition-transform duration-300 text-[#a0a0a0] ${isOpen ? "rotate-90" : ""
+                            }`}
                         >
                           <path
                             d="M7.5 5L12.5 10L7.5 15"
@@ -559,11 +555,10 @@ const Home = () => {
                         </svg>
                       </button>
                       <div
-                        className={`grid transition-all duration-300 ease-in-out ${
-                          isOpen
-                            ? "grid-rows-[1fr] opacity-100"
-                            : "grid-rows-[0fr] opacity-0"
-                        }`}
+                        className={`grid transition-all duration-300 ease-in-out ${isOpen
+                          ? "grid-rows-[1fr] opacity-100"
+                          : "grid-rows-[0fr] opacity-0"
+                          }`}
                       >
                         <div className="overflow-hidden">
                           <p
@@ -645,7 +640,7 @@ const Home = () => {
                   <div className=" w-full xs:max-w-[360px]">
                     <div
                       className="bg-[#2323234d] border-[1px] border-[#ffffff14]
-                rounded-full p-1 flex items-center gap-1.5 w-fit xs:max-w-[360px] mx-auto transition-all duration-200 ease-in-out"
+                      rounded-full p-1 flex items-center gap-1.5 w-fit xs:max-w-[360px] mx-auto transition-all duration-200 ease-in-out"
                     >
                       <input
                         type="email"
@@ -677,11 +672,10 @@ const Home = () => {
                   </div>
                   <div className="relative mt-1.5 flex items-center justify-center h-5 w-full">
                     <p
-                      className={`absolute text-[12px] text-red-400 text-center transition-opacity duration-300 ${
-                        showEmailError
-                          ? "opacity-100 pointer-events-auto"
-                          : "opacity-0 pointer-events-none"
-                      }`}
+                      className={`absolute text-[12px] text-red-400 text-center transition-opacity duration-300 ${showEmailError
+                        ? "opacity-100 pointer-events-auto"
+                        : "opacity-0 pointer-events-none"
+                        }`}
                     >
                       Please enter a valid email address
                     </p>

@@ -48,11 +48,10 @@ const Header = () => {
   return (
     <nav className="fixed top-2 xs:top-4 z-50 px-4 xs:px-0 flex w-full">
       <div
-        className={`w-fit rounded-full p-3.5 pl-[15px] pr-6 flex items-center gap-6 h-12 mx-auto border-[1px] transition-all duration-300 ${
-          isScrolled
-            ? "bg-[#23232380] border-[#ffffff26] backdrop-blur"
-            : "bg-[#2323234d] border-[#ffffff14]"
-        }`}
+        className={`w-fit rounded-full p-3.5 pl-[15px] pr-6 flex items-center gap-6 h-12 mx-auto border-[1px] transition-all duration-300 ${isScrolled
+          ? "bg-[#23232380] border-[#ffffff26] backdrop-blur"
+          : "bg-[#2323234d] border-[#ffffff14]"
+          }`}
       >
         <button
           type="button"
@@ -77,9 +76,8 @@ const Header = () => {
                 moveIndicatorDot(e.currentTarget);
                 scrollToSection(item.targetId);
               }}
-              className={`h-8 text-[15px] cursor-pointer leading-none font-medium transition-colors ${
-                active === i ? "text-white" : "text-[#a0a0a0] hover:text-white"
-              }`}
+              className={`h-8 text-[15px] cursor-pointer leading-none font-medium transition-colors ${active === i ? "text-white" : "text-[#a0a0a0] hover:text-white"
+                }`}
             >
               {item.label}
             </button>
